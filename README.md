@@ -1,104 +1,200 @@
-# Smart Agri Assistant
+# RytaMitra 🌾
 
-End-to-end agri assistant with crop recommendation (ML), livestock tracking, weather, irrigation, and utilities. Frontend (Vite + React + Tailwind) with multilingual + voice support; backend (Flask) for crop prediction; Supabase for livestock data.
+## Smart Agriculture Management & Crop Recommendation System
 
-## Feature Matrix
+RytaMitra is a full-stack, AI-powered agriculture management and decision-support system designed to help farmers manage farm activities and make data-driven crop decisions. The platform combines modern web technologies with Machine Learning to improve agricultural productivity, financial planning, and sustainability.
 
-| Area | What it does | Tech/Notes |
-| --- | --- | --- |
-| Crop Recommendation (ML) | 7-parameter form (N, P, K, temperature, humidity, pH, rainfall); top-3 crops with confidence; friendly validation. | React UI (`src/pages/Disease.jsx`), Flask `/api/predict-crop`, RandomForest model (`crop_model.pkl`). |
-| Crop Info API | Returns parameter ranges/metadata to guide inputs. | Flask `/api/crop-info`. |
-| Health Check | Readiness endpoint for backend. | Flask `/api/health`. |
-| Model Training | Trains on `Crop_recommendation.csv`; prints accuracy + classification report; saves artifacts. | `backend/train_model.py`, outputs `crop_model.pkl`, `label_encoder.pkl`. |
-| Livestock - Cow | Supabase CRUD, multi-entry per day, table views. | React + Supabase; per-day uniqueness removed. |
-| Poultry - Chicken | Form with egg price + daily entries; table view; multi-entry per day. | React + Supabase; FaEgg icon fix. |
-| Weather Widget | Dashboard weather card. | `Weather` component. |
-| Flood Alert | Quick navigation to flood alerts. | Agriculture landing card. |
-| Irrigation | Scheduling/management entry point. | Agriculture landing card. |
-| Theme Auto-Detect Sidebar | Auto light/dark from system; smooth transitions. | `src/components/Sidebar.jsx` with `prefers-color-scheme`. |
-| Multilingual | en/hi/kn/ta/te translations. | `public/locales/*`. |
-| Voice Commands (Agriculture) | Kannada commands route to detection/alert/irrigation. | `src/pages/Agriculture.jsx` voiceCommand listener. |
-| Voice Bot (Ramanna) | Kannada AI assistant with speech. | React voice components. |
-| Documentation | Setup, reference, visuals. | Multiple `*.md` guides in repo. |
+---
 
-## Architecture
+## 📌 Project Overview
 
-- Frontend: Vite + React + Tailwind, i18n, voice navigation, cards-based UX
-- Backend: Flask API for predictions and metadata
-- ML: RandomForest on `Crop_recommendation.csv`; artifacts `crop_model.pkl`, `label_encoder.pkl`
-- Data: Supabase for livestock modules (Cow/Chicken)
+RytaMitra provides an integrated solution for:
 
-## Project Structure (high level)
+* Crop recommendation using Machine Learning (Random Forest)
+* Farm financial and transaction management
+* Livestock (Dairy & Poultry) tracking
+* Loan and government scheme awareness
+* Market price reference for milk and eggs
 
-```
-backend/
-  crop_prediction.py       # Flask API (predict-crop, crop-info, health)
-  train_model.py           # Train RF model, print metrics, save artifacts
-  requirements.txt         # flask, flask-cors, scikit-learn, pandas, numpy
-public/
-  locales/                 # en/hi/kn/ta/te translations
-  fasalBhima/, gangaKalyana/, kisanCredit/, ...
-src/
-  pages/                   # Agriculture, Disease (crop rec UI), Bank, etc.
-  components/              # Sidebar (theme-aware), Weather, VoiceInput, etc.
-  data/                    # Schemes, bank/fd data
-  hooks/                   # useVoiceCommands
-  i18n.js, main.jsx, App.jsx, index.css
-```
+The system is available as both a **web application** and a **mobile application**, ensuring wider accessibility.
 
-## Setup and Run
+---
 
-### Frontend (Vite + React)
-```bash
-npm install
-npm run dev
-# opens http://localhost:5173
-```
+## 🛠️ Technologies Used
 
-### Backend (Flask)
-```bash
-cd backend
-pip install -r requirements.txt
-python crop_prediction.py
-# runs at http://localhost:5001
-```
+### Frontend
 
-### Train or Re-train the Model
-```bash
-cd backend
-python train_model.py
-# prints accuracy + classification report
-# saves crop_model.pkl and label_encoder.pkl
-```
+* React.js
+* HTML5, CSS3, JavaScript
 
-## API (Backend)
-- POST `/api/predict-crop` — body: `{ N, P, K, temperature, humidity, ph, rainfall }` → top-3 crops with confidence
-- GET `/api/crop-info` — parameter ranges and descriptions
-- GET `/api/health` — readiness check
+### Backend
 
-## Key Pages/Flows
-- Agriculture landing: cards for Flood Alert, Crop Recommendation, Irrigation; voice navigation (Kannada)
-- Crop Recommendation UI: 7 inputs, validation, results with confidences
-- Sidebar: auto-detects light/dark, animated navigation
-- Cow/Chicken modules: Supabase-backed CRUD with multi-entry per day
+* Node.js
+* REST APIs
 
-## Voice & Language
-- Voice bot (Ramanna) and voice commands for navigation
-- Kannada-first commands for detection/alert/irrigation
-- Translations available: en, hi, kn, ta, te
+### Database & Hosting
 
-## Scripts
-- `npm run dev` — start frontend
-- `python crop_prediction.py` — start backend
-- `python train_model.py` — train model and print metrics
+* Supabase (Database & Authentication)
+* Vercel (Web Hosting)
 
-## Notes
-- Ensure `Crop_recommendation.csv` exists in `backend/` before training
-- Start backend before using Crop Recommendation UI
-- Configure Supabase keys/env for livestock modules
+### Machine Learning
 
-## Support
-- Email: esrsamarth@gmail.com
-- WhatsApp: +91-9353618980
+* Random Forest Algorithm
+* Python (Model Training)
+* Scikit-learn
 
-Built with care for farmers. 🌾
+---
+
+## 🤖 Machine Learning – Crop Recommendation System
+
+The core intelligence of RytaMitra is the Crop Recommendation System implemented using the **Random Forest algorithm**.
+
+### Dataset
+
+* Source: Kaggle – Crop Recommendation Dataset
+* Link: [https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
+* Samples: 2200
+* Features: 7
+* Crop Classes: 22
+
+### Input Parameters
+
+* Nitrogen (N)
+* Phosphorus (P)
+* Potassium (K)
+* Temperature
+* Humidity
+* Rainfall
+* pH value
+
+### Model Details
+
+* Train-Test Split: 80% Training, 20% Testing
+* Algorithm: Random Forest Classifier
+
+---
+
+## 📊 Model Training and Performance Evaluation (Random Forest)
+
+* The Random Forest model was successfully trained using agricultural soil and environmental data.
+* The trained model achieved a **test accuracy of 99.32%**.
+* Precision, Recall, and F1-score values for most crop classes are close to **1.00**, indicating excellent performance.
+* The trained model and label encoder were saved and loaded efficiently for real-time prediction.
+
+---
+
+## 📈 Evaluation Metrics Used
+
+* Training Accuracy
+* Testing Accuracy
+* Confusion Matrix
+* Precision
+* Recall
+* F1 Score
+* Classification Report
+* Feature Importance
+
+---
+
+## ✅ Result of Implementation (Random Forest Algorithm)
+
+1. The Random Forest model was trained using the Kaggle Crop Recommendation Dataset and validated using test data.
+2. The trained model was deployed through a backend API for real-time predictions.
+3. Based on soil and environmental inputs, the system predicts the most suitable crop and provides confidence-based recommendations.
+4. The implementation confirms that Random Forest offers stable, accurate, and reliable predictions for crop recommendation.
+
+---
+
+## 🌐 Play Store (Web Store)
+
+1. The RytaMitra application is hosted on **Vercel**, enabling fast and scalable web access.
+2. The application is also packaged and deployed as a **mobile app via the Google Play Store**.
+3. Users can access the same features on both web and mobile platforms.
+4. The web and mobile versions share the same backend services and ML model.
+5. Vercel enables seamless updates and continuous deployment.
+
+---
+
+## 🌾 Government Schemes Referenced
+
+* ಗಂಗಾ ಕಲ್ಯಾಣ ಯೋಜನೆ (Ganga Kalyana Yojana)
+* ಪ್ರಧಾನ ಮಂತ್ರಿ ಫಸಲ್ ಭೀಮಾ ಯೋಜನೆ (Pradhan Mantri Fasal Bima Yojana)
+* ಕಿಸಾನ್ ಕ್ರೆಡಿಟ್ ಕಾರ್ಡ್ (Kisan Credit Card)
+
+These schemes are included to improve farmer awareness and financial planning.
+
+---
+
+## 🏦 Agricultural Loan Providers
+
+The system references agricultural loan services offered by major banks such as:
+
+* State Bank of India (SBI)
+* Canara Bank
+* Bank of Baroda
+* Karnataka Gramin Bank
+* NABARD-supported banks
+
+---
+
+## 🥚🥛 Market Price References
+
+* Egg price references sourced from National Egg Coordination Committee (NECC) and online commodity portals.
+* Milk price references based on dairy market trends and cooperative data.
+
+These references help farmers understand current market rates.
+
+---
+
+## 🧩 Key Features
+
+* AI-based crop recommendation
+* Confidence-based prediction output
+* User-friendly dashboard
+* Financial and transaction tracking
+* Loan and scheme awareness
+* Dairy and poultry management
+* Web and mobile accessibility
+
+---
+
+## 🎯 How RytaMitra is Different
+
+* Combines farm management and AI-based crop recommendation in one platform
+* Uses deployed ML model instead of standalone scripts
+* Provides real-world decision support, not just prediction
+* Cloud-hosted, scalable, and user-friendly
+
+---
+
+## 🔮 Future Enhancements
+
+* IoT sensor integration
+* Weather API integration
+* Mobile notifications
+* Multilingual support
+* Advanced ML models
+
+---
+
+## 📚 References
+
+1. Kaggle Crop Recommendation Dataset: [https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
+2. Pradhan Mantri Fasal Bima Yojana: [https://pmfby.gov.in/](https://pmfby.gov.in/)
+3. Kisan Credit Card: [https://en.wikipedia.org/wiki/Kisan_Credit_Card](https://en.wikipedia.org/wiki/Kisan_Credit_Card)
+4. React Documentation: [https://reactjs.org/](https://reactjs.org/)
+5. Node.js Documentation: [https://nodejs.org/](https://nodejs.org/)
+6. Supabase Documentation: [https://supabase.com/](https://supabase.com/)
+
+---
+
+## 👨‍💻 Author
+
+**Mahadevprasad DL (Girish D L)**
+Full Stack Developer | Machine Learning Enthusiast
+
+---
+
+## 📌 Conclusion
+
+RytaMitra successfully integrates Machine Learning with modern web technologies to provide a practical, scalable, and intelligent agriculture management system. The Random Forest-based crop recommendation model demonstrates high accuracy and reliability, making the platform valuable for real-world agricultural decision-making.
