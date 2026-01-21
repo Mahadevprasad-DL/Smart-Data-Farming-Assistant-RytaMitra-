@@ -190,10 +190,12 @@ These references help farmers understand current market rates.
 
 ## 👨‍💻 Author
 
-**Mahadevprasad DL (Girish D L)**
-Full Stack Developer | Machine Learning Enthusiast
 
----
+**Mahadevprasad D L**  
+MCA | Full Stack Developer | AI & ML Enthusiast  
+
+**Freelancer:** mpcodecrafter  
+🌐 Portfolio: [https://mpcodecrafter.free.nf/?i=1](https://mpcodecrafter.free.nf/?i=1)
 
 ## 📌 Conclusion
 
