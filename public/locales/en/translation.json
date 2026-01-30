@@ -1,0 +1,397 @@
+{
+  "dashboard": {
+    "title": "Dashboard",
+    "totalBalance": "Total Balance",
+    "activeLoans": "Active Loans",
+    "livestockCount": "Livestock Count",
+    "pendingPayments": "Pending Payments",
+    "recentTransactions": "Recent Transactions",
+    "activeSchemes": "Active Schemes",
+    "voiceCommands": "Voice Commands Available",
+    "weatherForecast": "Weather Forecast",
+    "notifications": "Notifications",
+    "addTransaction": "Add Transaction",
+    "viewAll": "View All",
+    "dueDate": "Due Date",
+    "todayOverview": "Today's Overview",
+    "today": "Today",
+    "status": {
+      "active": "Active",
+      "pending": "Pending"
+    }
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "charts": "Charts",
+    "transactions": "Transactions",
+    "loans": "Loans",
+    "schemes": "Government Schemes",
+    "animals": "Animals",
+    "cow": "Cow",
+    "chicken": "Chicken",
+    "agriculture": "Agriculture"
+  },
+  "topbar": {
+    "title": "RytaMitra - Farmer's Friend",
+    "welcome": "Welcome back",
+    "location": "Bangalore Region",
+    "weather": {
+      "forecast": "Sunny with light rain expected"
+    },
+    "appName": "RytaMitra"
+  },
+  "commands": {
+    "goToDashboard": "Go to Dashboard",
+    "showTransactions": "View Transactions",
+    "showCharts": "View Charts",
+    "showCow": "View Cow Details",
+    "showChicken": "View Chicken Details",
+    "showSchemes": "View Schemes",
+    "showLoans": "View Loans"
+  },
+  "animals": {
+    "title": "Animal Management",
+    "dairy": {
+      "title": "Dairy Management",
+      "description": "Track milk production, revenue, and dairy cattle management",
+      "totalCows": "Total Cows",
+      "dailyProduction": "Daily Production (L)",
+      "monthlyRevenue": "Monthly Revenue (₹)",
+      "averagePerCow": "Average per Cow (L)",
+      "weeklyOverview": "Weekly Production Overview",
+      "dailyStats": "Daily Production",
+      "cowCount": "Total Cows",
+      "addNew": "Add New Cow",
+      "addNewCow": "Add New Cow Details",
+      "count": "Number of Cows",
+      "production": "Daily Milk Production (L)",
+      "delete": "Delete All",
+      "deleteConfirm": "Are you sure you want to delete all cow data? This action cannot be undone."
+    },
+    "poultry": {
+      "title": "Poultry Management",
+      "description": "Monitor egg production, poultry health, and related revenue",
+      "totalBirds": "Total Birds",
+      "dailyEggs": "Daily Eggs",
+      "monthlyRevenue": "Monthly Revenue (₹)",
+      "averagePerBird": "Average per Bird",
+      "weeklyOverview": "Weekly Egg Production",
+      "dailyStats": "Daily Eggs",
+      "birdCount": "Total Birds",
+      "addNew": "Add New Bird",
+      "addNewBird": "Add New Bird Details",
+      "count": "Number of Birds",
+      "production": "Daily Egg Production",
+      "delete": "Delete All",
+      "deleteConfirm": "Are you sure you want to delete all chicken data? This action cannot be undone."
+    }
+  },
+  "charts": {
+    "title": "Your Farm's Story in Pictures",
+    "helper": {
+      "whatIsThis": "What am I looking at?",
+      "explanation": "These pictures show how your farm is doing. They help you see your income, expenses, and growth easily."
+    },
+    "categories": {
+      "income": "Income",
+      "expenses": "Expenses",
+      "crops": "Crops",
+      "dairy": "Dairy",
+      "poultry": "Poultry",
+      "seeds": "Seeds",
+      "feed": "Animal Feed",
+      "fertilizer": "Fertilizer",
+      "labor": "Labor",
+      "simple": {
+        "income": "Money Coming In",
+        "expenses": "Money Going Out",
+        "crops": "Your Crops",
+        "livestock": "Your Animals"
+      }
+    },
+    "metrics": {
+      "distribution": "Distribution Overview",
+      "trends": "Trend Analysis",
+      "monthlyRevenue": "Monthly Revenue",
+      "productionTrends": "Production Trends"
+    },
+    "insights": {
+      "income": "💡 Larger segments in the pie chart show your main income sources. Taller bars in the trend chart show better performance.",
+      "expenses": "💡 The charts show where you spend the most money. Look for unusually high expenses to find saving opportunities.",
+      "crops": "Review your crop performance across different categories"
+    },
+    "common": {
+      "week1": "Week 1",
+      "week2": "Week 2",
+      "week3": "Week 3",
+      "week4": "Week 4"
+    },
+    "chartTypes": {
+      "bar": "Bar Chart",
+      "line": "Line Chart",
+      "pie": "Pie Chart"
+    },
+    "dateRanges": {
+      "week": "Weekly",
+      "month": "Monthly",
+      "year": "Yearly",
+      "simple": {
+        "week": "Weekly",
+        "month": "Monthly",
+        "year": "Yearly"
+      }
+    },
+    "chartHelp": {
+      "pie": "Shows distribution of values as percentages",
+      "bar": "Compare values across categories",
+      "line": "Track trends over time"
+    },
+    "trend": {
+      "increase": "Things are getting better",
+      "decrease": "Things need attention"
+    },
+    "help": {
+      "title": "How to Read These Pictures",
+      "barChart": "The tall bars show bigger numbers - taller is better for income, shorter is better for expenses",
+      "lineChart": "The line shows changes over time - going up means increase, going down means decrease",
+      "pieChart": "The circle is divided into parts - bigger parts mean bigger portions of your total"
+    }
+  },
+  "transactions": {
+    "title": "Transactions",
+    "milkSale": "Milk sale",
+    "feedPurchase": "Feed purchase",
+    "cropSale": "Crop sale",
+    "type": {
+      "credit": "Credit",
+      "debit": "Debit"
+    },
+    "filter": "Filter transactions",
+    "date": "Date",
+    "description": "Description",
+    "amount": "Amount",
+    "add": "Add Transaction",
+    "addNew": "Add New Transaction",
+    "regular": "Regular Transactions",
+    "crop": "Crop Transactions"
+  },
+  "schemes": {
+    "pmKisan": "PM Kisan",
+    "cropInsurance": "Crop Insurance"
+  },
+  "status": {
+    "active": "Active",
+    "pending": "Pending"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "loans": {
+    "myLoans": "My Loans",
+    "bankOffers": "Bank Offers",
+    "fdRates": "Fixed Deposit Rates",
+    "riskAnalysis": "Risk Analysis",
+    "addNew": "Add New Loan",
+    "status": {
+      "active": "Active",
+      "closed": "Closed",
+      "defaulted": "Defaulted"
+    },
+    "analysis": {
+      "title": "Loan Risk Analysis",
+      "monthlyIncome": "Monthly Income",
+      "existingLoans": "Existing Loan EMIs",
+      "expenses": "Monthly Expenses",
+      "creditScore": "Credit Score",
+      "recommendation": "Recommendation",
+      "maximumEligible": "Maximum Eligible Amount",
+      "suggestedEMI": "Suggested EMI",
+      "repaymentPlan": "Repayment Plan",
+      "risk": {
+        "low": "Low Risk",
+        "medium": "Medium Risk",
+        "high": "High Risk"
+      },
+      "simpleResults": {
+        "title": "Loan Analysis Results",
+        "canTakeLoan": "✅ You can safely take this loan",
+        "cannotTakeLoan": "⚠️ This loan might be risky for you",
+        "maxLoanPossible": "Maximum loan you can take: ₹{{amount}}",
+        "monthlyPayment": "Monthly payment will be: ₹{{amount}}",
+        "monthlyCapacity": "You can afford to pay: ₹{{amount}} per month",
+        "surplus": "Money left after all payments: ₹{{amount}} per month",
+        "savingSuggestion": "You should try to save: ₹{{amount}} per month",
+        "riskLevels": {
+          "low": "Your financial health looks good 😊",
+          "medium": "Be careful with your expenses 🤔",
+          "high": "This might be difficult to manage ⚠️"
+        },
+        "recommendations": {
+          "good": "This loan seems manageable for your income",
+          "bad": "This loan amount is too high for your current income",
+          "savings": "Make sure to keep some money aside for emergencies"
+        }
+      },
+      "otherIncome": "Other Income (Yearly)",
+      "otherIncomeHelper": "Include seasonal farm income, rental income, etc.",
+      "loanAmount": "Required Loan Amount",
+      "loanTenure": "Loan Duration (Years)",
+      "analyze": "Analyze Loan Risk"
+    },
+    "form": {
+      "bankName": "Bank Name",
+      "loanType": "Loan Type",
+      "amount": "Loan Amount",
+      "interestRate": "Interest Rate (%)",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "monthlyPayment": "Monthly Payment",
+      "remainingAmount": "Remaining Amount",
+      "tenureMonths": "Tenure (Months)"
+    },
+    "preview": {
+      "title": "Loan Preview",
+      "amount": "Loan Amount",
+      "monthlyPayment": "Monthly Payment",
+      "duration": "Duration",
+      "months": "months",
+      "features": "Special Features"
+    },
+    "success": {
+      "loanAdded": "Loan added successfully"
+    },
+    "activeLoansList": "Active Loans List",
+    "summary": {
+      "title": "Loan Summary",
+      "totalBorrowed": "Total Borrowed",
+      "remaining": "Total Remaining",
+      "monthlyPayment": "Total Monthly Payment"
+    },
+    "guide": {
+      "howToRead": "How to Read Loan Details",
+      "interestExplanation": "Interest Rate Explanation",
+      "documents": "Required Documents",
+      "bestPractices": "Best Practices"
+    },
+    "filter": {
+      "all": "All Loans"
+    },
+    "risk": {
+      "low": "Low Risk",
+      "medium": "Medium Risk",
+      "high": "High Risk"
+    },
+    "language": {
+      "kannada": "Kannada",
+      "hindi": "Hindi",
+      "english": "English"
+    },
+    "tooltip": {
+      "interestRate": "Annual Interest Rate",
+      "monthlyPayment": "Monthly Payment",
+      "documents": "Required Documents",
+      "helpline": "Helpline Number"
+    },
+    "bank": {
+      "public": "Government Bank",
+      "private": "Private Bank"
+    },
+    "tips": {
+      "title": "Tips for Fixed Deposits",
+      "compare": "Compare rates between different banks for best returns",
+      "senior": "Senior citizens (above 60) get higher rates",
+      "duration": "Longer duration usually gives better interest rates"
+    },
+    "interest": {
+      "rate": "Interest Rate (%)",
+      "normal": "Regular Rate",
+      "senior": "Senior Citizen Rate"
+    },
+    "deposit": {
+      "minimum": "Minimum Deposit Amount"
+    },
+    "duration": {
+      "months": "Months",
+      "year": "Year",
+      "years": "Years"
+    },
+    "calculator": {
+      "fdTitle": "Fixed Deposit Calculator",
+      "depositAmount": "Deposit Amount",
+      "amountPlaceholder": "Enter amount",
+      "interestRate": "Interest Rate (%)",
+      "ratePlaceholder": "Enter interest rate",
+      "depositYears": "Time Period (Years)",
+      "yearsPlaceholder": "Enter years",
+      "calculate": "Calculate Returns",
+      "result": {
+        "title": "Maturity Details",
+        "depositAmount": "Principal Amount",
+        "interestEarned": "Interest Earned",
+        "totalAmount": "Maturity Amount",
+        "interestRate": "Interest Rate",
+        "timePeriod": "Time Period"
+      }
+    }
+  },
+  "agriculture": {
+    "title": "Agriculture Management",
+    "weather": {
+      "title": "Weather Information",
+      "description": "Current weather and forecast",
+      "loading": "Loading weather information...",
+      "current": "Current Weather",
+      "humidity": "Humidity",
+      "wind": "Wind Speed",
+      "forecast": "5-Day Forecast",
+      "advisory": "Farmer's Advisory",
+      "errorMessage": "Please enable your location services",
+      "noData": "Weather information not available",
+      "advisoryList": {
+        "highTemp": "High Temperature - Water your plants",
+        "waterCrops": "Increase irrigation frequency for crops",
+        "lowTemp": "Low Temperature - Protect your crops",
+        "frostProtection": "Cover crops to protect from frost",
+        "highHumidity": "High Humidity - Take disease control measures",
+        "fungalAlert": "Risk of fungal diseases - Apply fungicides",
+        "lowHumidity": "Low Humidity - Extra irrigation needed",
+        "waterConservation": "High evaporation - Use mulching",
+        "strongWind": "Strong Winds - Provide support to crops",
+        "cropSupport": "Install stakes for tall crops",
+        "noonActivity": "Avoid spraying during peak sunshine"
+      }
+    },
+    "flood": {
+      "title": "Flood Alert",
+      "description": "Flood forecasts and warnings",
+      "alerts": "Flood Alerts",
+      "riskLevel": "Risk Level",
+      "safetyTips": "Safety Tips",
+      "emergency": "Emergency Contacts"
+    },
+    "disease": {
+      "title": "Disease Detection",
+      "description": "Plant disease detection and management",
+      "upload": "Upload Image",
+      "analyze": "Analyze",
+      "results": "Results",
+      "treatment": "Treatment Suggestions",
+      "useCamera": "Use Camera",
+      "uploadImage": "Upload Image",
+      "capture": "Capture",
+      "analyzing": "Analyzing...",
+      "detectDisease": "Detect Disease",
+      "uploadPrompt": "Upload an image or use camera to capture",
+      "result": "Detection Result"
+    },
+    "irrigation": {
+      "title": "Irrigation",
+      "description": "Irrigation scheduling and management",
+      "schedule": "Irrigation Schedule",
+      "waterUsage": "Water Usage",
+      "efficiency": "Efficiency Analysis",
+      "tips": "Water Conservation Tips"
+    }
+  }
+}
